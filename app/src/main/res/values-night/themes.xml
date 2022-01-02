@@ -1,0 +1,51 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.BroadcastReceiver" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.BroadcastReceiver.Toolbar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/white</item>
+    </style>
+
+    <style name="Theme.BroadcastReceiver.NoteItem" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_marginStart">@dimen/noteItem_marginStart</item>
+    </style>
+
+    <style name="Theme.BroadcastReceiver.NoteItemTitle" parent="Theme.BroadcastReceiver.NoteItem">
+        <item name="android:textSize">@dimen/noteItem_titleTextSize</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Theme.BroadcastReceiver.NoteItemContent" parent="Theme.BroadcastReceiver.NoteItem">
+        <item name="android:textSize">@dimen/noteItem_textSize</item>
+        <item name="android:maxLines">4</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="Theme.BroadcastReceiver.NoteItemDate" parent="Theme.BroadcastReceiver.NoteItem">
+        <item name="android:textSize">@dimen/noteItem_textSize</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:layout_marginTop">@dimen/noteItem_date_marginTop</item>
+    </style>
+
+    <style name="Theme.BroadcastReceiver.NoteCardView" parent="Widget.MaterialComponents.CardView">
+        <item name="android:layout_margin">@dimen/noteItem_cardMargin</item>
+        <item name="android:background">?android:selectableItemBackground</item>
+        <item name="cardCornerRadius">@dimen/noteItem_cardCornerRadius</item>
+        <item name="cardElevation">@dimen/noteItem_cardElevation</item>
+    </style>
+</resources>
